@@ -98,7 +98,8 @@ main{
     background-color: rgba(237, 231, 231, 1);
     padding: 10px;
     width: max-content;
-    max-width: 100%;
+    max-width: 178px;
+    word-break: break-word;
     line-height: 20px;
     margin: 3px 5px;
     border-radius: 0px 20px 20px 0px;
@@ -139,10 +140,12 @@ main{
 }
 
 .main-content .sender{
-    background-color: rgba(237, 231, 231, 1);
+    background-color: #1877F2;
     padding: 10px;
+    color: white;
     width: max-content;
-    max-width: 100%;
+    max-width: 178px;
+    word-break: break-word;
     line-height: 20px;
     margin: 3px 5px;
     border-radius: 20px 0px 0px 20px;
@@ -185,7 +188,7 @@ main{
 }
 
 .seen-container .seen{
-    padding: 2px 1px 0px 0px;
+    margin: 0 4px;
 }
 
 .seen .seen-image{
@@ -217,6 +220,17 @@ main{
     list-style-type: none;
 }
 
+.forword-container{
+    position: relative;
+}
+
+.forword-container .forword{
+    position: absolute;
+    top: 140px;
+    left: 110px;
+    font-size: 20px;
+}
+
 #footer nav ul li input{
     border: 1px solid rgb(226, 223, 223);
     padding: 6px 2px;
@@ -225,6 +239,10 @@ main{
     padding: 8px;
     position: relative;
     background-color: rgba(237, 231, 231, 1);
+}
+
+#footer nav ul li input:focus{
+   outline: none;
 }
 
 #footer nav ul li a .smile-search{
@@ -242,4 +260,80 @@ main{
 #footer nav ul li a i:hover{
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.hover{
+    visibility: hidden;
+}
+
+.sender-hover{
+    visibility: hidden;
+}
+
+
+.hover i{
+    padding: 6px 6px;
+    font-size: 14px;
+    color: gray;
+}
+
+.sender-hover .hover i{
+    padding: 6px 6px;
+    font-size: 14px;
+    color: gray;
+}
+
+
+.hover-container{
+    width: 259px;
+    position: relative;
+}
+
+.hover-sender-container{
+    width: 260px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hover-sender-container .sender-hover i{
+    padding: 6px 6px;
+    font-size: 14px;
+    color: gray;
+}
+
+.hover{
+    position: absolute;
+    right: 2px;
+    top: 9px;
+}
+
+.sender-hover{
+    position: absolute;
+    left: 70px;
+    top: 9px;
+}
+
+.ellipse-icon{
+    padding: 5px 10px !important;
+    font-size: 14px;
+}
+
+.hover i:hover{
+    background-color: #ccc8c8;
+    border-radius: 50%;
+}
+
+.sender-hover i:hover{
+    background-color: #ccc8c8;
+    border-radius: 50%;
+}
+
+.container .hover-container:hover .hover{
+    visibility: visible;
+}
+
+.hover-sender-container:hover .sender-hover{
+    visibility: visible;
 }
